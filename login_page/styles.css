@@ -14,6 +14,21 @@ body {
     background: url(images/img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: blue;
+}
+
+.logo a {
+   position: fixed;
+   top: 10px;
+   left: 30px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-decoration: none;
+   color: #fff;
+}
+
+.logo a:hover {
+   color: orange;
 }
 
 .wrapper {

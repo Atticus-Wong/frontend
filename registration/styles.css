@@ -17,6 +17,20 @@ body {
      background-position: center;
 }
 
+.logo a {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+ }
+ 
+ .logo a:hover {
+    color: orange;
+ }
+
 .wrapper {
     width: 750px;
     background: rgba(0, 0, 0, .1);

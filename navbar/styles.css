@@ -43,9 +43,12 @@ header {
 }
 
 .navbar .logo a {
+    position: fixed;
+    top: 10px;
+    left: 30px;
     font-size: 1.5rem;
     font-weight: bold;
-}
+ }
 
 .navbar .links {
     display: flex;
@@ -91,7 +94,7 @@ header {
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu.open {
@@ -99,7 +102,7 @@ header {
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,6 +112,21 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -124,5 +142,12 @@ header {
     .dropdown_menu {
         display: block;
 
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
     }
 }
